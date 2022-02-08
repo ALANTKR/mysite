@@ -1,0 +1,16 @@
+my site : 디렉토리 바깥의 디렉토리는 단순히 프로젝트를 담는 공간
+         : django와 아무 상관없으며, 원하는 이름 변경 가능
+         : 디렉토리 내부에는 프로젝트를 위한 실제 python패키지들이 저장됨
+         : 프로젝트의 어디서나  python 패키지들을 임포트할 수 있음{ ex)mysite.urls }
+
+manage.py: django 프로젝트와 다양한 방법으로 상호작용하는 커멘드라인의 유틸리티
+
+mysite/__init__.py: Python으로 하여금 이 디렉토리를 패키지처럼 다루라고 알려주는 용도의 단순한 빈 파일
+
+mysite/settings.py : 현재 django 프로젝트의 환경 및 구성을 저장한다.
+                     : django settings에서 환경 설정이 어떻게 동작하는지 확인 할 수 있다.
+
+mysite/urls.py : 현재 django project의 URL 선언을 저장
+                 : django로 작성된 사이트의 "목차"
+
+mysite/wsgi.py : 현재 프로젝트를 서비스하기 위한 WSGI호환 웹 서버의 진입점이다.
